@@ -24,9 +24,9 @@ COPY . .
 
 # Environment variables
 ENV PYTHONUNBUFFERED=1
-ENV PORT=5000
+ENV PORT=8000
 
-EXPOSE 5000
+EXPOSE 8000
 
 # Run the app
 CMD ["python3", "app.py"]
