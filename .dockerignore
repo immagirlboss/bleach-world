@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.git/
+.gitignore
+.dockerignore
+Dockerfile
+README.md
+tests.py
+static/img/  # exclude source images if they are huge
