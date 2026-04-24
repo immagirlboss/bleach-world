@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Society Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1>Soul Society Game</h1>
+        <p>Bleach themed Wumpus World project</p>
+    </header>
+
+    <div class="layout">
+        <main class="main">
+            <div id="grid"></div>
+            <div class="controls">
+                <button id="stepBtn">Step</button>
+                <button id="autoBtn">Auto</button>
+                <button id="revealBtn">Reveal</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="box">
+                <h3>Player Info</h3>
+                <div class="small" id="info">
+                    Position: - <br>
+                    Steps: 0 <br>
+                    Bankai Ready: Yes
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Prolog Query Trace</h3>
+                <div id="trace" class="trace">Waiting for queries...</div>
+            </div>
+
+            <div class="box">
+                <h3>Mission Log</h3>
+                <div id="log" class="log"></div>
+            </div>
+        </aside>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="popup">
+            <h2 id="endTitle">Game Over</h2>
+            <button id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
