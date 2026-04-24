@@ -1,8 +1,8 @@
-# Soul Society Agent Simulator
+# Soul Society agent simulator
 
-A Bleach-themed Wumpus World project using Flask and SWI-Prolog.
+A Bleach-themed Wumpus world project using Flask and SWI-Prolog.
 
-## Project Structure
+## Project structure
 - `app.py`: Flask backend and WorldState logic.
 - `tests.py`: Batch test runner for simulation performance analysis.
 - `prolog/kb.pl`: Prolog knowledge base and inference rules.
