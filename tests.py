@@ -110,7 +110,7 @@ def main():
     # 4. Scaling
     print("\nTesting scaling")
     print(f"{'Mode':<10} | {'Win Rate':<10}")
-    for label, nc, nr in [("Easy", 2, 2), ("Hard", 3, 3), ("Insane", 4, 4)]:
+    for label, nc, nr in [("Easy", 2, 2), ("Hard", 3, 2), ("Insane", 3, 3)]:
         s = batch_test(list(range(20)), nc, nr)
         print(f"{label:<10} | {s['rate']}%")
 
